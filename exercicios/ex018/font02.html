@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas download</title>
+    <style>
+        /*
+        Se a fonte baixada estiver em uma pasta, então coloque o nome da pasta na url. Ex: 'fontes/love larry ttf.ttf'
+
+        */
+        @font-face {
+            font-family: 'Love';
+            src: url('love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (apple advanced typography)
+            - svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam earum eligendi voluptas ipsa nulla odio neque adipisci sed repellat officia nostrum error est ipsam repudiandae eum delectus, perferendis exercitationem!</p>
+    <h2>subtitulo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo fuga aliquam recusandae doloribus id dolorum dicta repellendus esse facere voluptatem voluptate, molestias omnis corrupti totam asperiores aperiam perspiciatis numquam eius?</p>
+    
+</body>
+</html>
