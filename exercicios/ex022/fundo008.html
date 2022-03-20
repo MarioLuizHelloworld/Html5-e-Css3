@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        #container{
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+
+            /* O position padrão é relative. Deixe o do container relative e mude o do conteúdo para absolute*/
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+            
+            /* Mudando o position para absolute, eu posso mudar o posicionamento do conteudo com o left, top e transform*/
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!--QUANDO VOU FAZER UMA CENTRALIZAÇÃO VERTICAL, PRECISO TER A PRESENÇA DE UM CONTAINER E UM CONTEUDO-->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
