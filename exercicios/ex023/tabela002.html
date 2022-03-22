@@ -15,6 +15,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -32,8 +33,25 @@
 
         thead,
         tfoot {
-            background-color: gray;
+            background-color: rgb(70, 70, 70);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(70, 70, 70);
+        }
+
+        /* Efeito zebrado
+        */        
+
+        tbody > tr:nth-child(odd) { /* (odd são as linhas impares) odd ou 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* (even são as linhas pares) even ou 2n */
+            background-color: lightgray;
         }
 
         .num {
@@ -180,6 +198,12 @@
             </tr>
         </tbody>
     </table>
+
+    <!--PARA EXEMPLIFICAÇÃO DE FUNCIONAMENTO CORRETO DO CABEÇALHO FIXO SÓ ATÉ O FIM DA TABELA-->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, repellendus? Quod perspiciatis perferendis veritatis, accusamus quidem quam maiores. Eum modi repellat soluta expedita laudantium tenetur doloribus reprehenderit neque natus veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum maxime aperiam aspernatur id temporibus voluptatem dolores ea laudantium delectus. In eum commodi praesentium dignissimos quod! Excepturi molestiae debitis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum voluptatum, qui minima fugiat rem id? Animi, recusandae eum ratione sint rem, quia iure in aspernatur, natus labore quas ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis suscipit rerum nemo quam veniam laboriosam optio, ducimus quas dicta repellat iusto earum nisi, vitae at. Eos laudantium quae exercitationem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, repellendus? Quod perspiciatis perferendis veritatis, accusamus quidem quam maiores. Eum modi repellat soluta expedita laudantium tenetur doloribus reprehenderit neque natus veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum maxime aperiam aspernatur id temporibus voluptatem dolores ea laudantium delectus. In eum commodi praesentium dignissimos quod! Excepturi molestiae debitis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum voluptatum, qui minima fugiat rem id? Animi, recusandae eum ratione sint rem, quia iure in aspernatur, natus labore quas ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis suscipit rerum nemo quam veniam laboriosam optio, ducimus quas dicta repellat iusto earum nisi, vitae at. Eos laudantium quae exercitationem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, repellendus? Quod perspiciatis perferendis veritatis, accusamus quidem quam maiores. Eum modi repellat soluta expedita laudantium tenetur doloribus reprehenderit neque natus veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum maxime aperiam aspernatur id temporibus voluptatem dolores ea laudantium delectus. In eum commodi praesentium dignissimos quod! Excepturi molestiae debitis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum voluptatum, qui minima fugiat rem id? Animi, recusandae eum ratione sint rem, quia iure in aspernatur, natus labore quas ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis suscipit rerum nemo quam veniam laboriosam optio, ducimus quas dicta repellat iusto earum nisi, vitae at. Eos laudantium quae exercitationem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, repellendus? Quod perspiciatis perferendis veritatis, accusamus quidem quam maiores. Eum modi repellat soluta expedita laudantium tenetur doloribus reprehenderit neque natus veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum maxime aperiam aspernatur id temporibus voluptatem dolores ea laudantium delectus. In eum commodi praesentium dignissimos quod! Excepturi molestiae debitis beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum voluptatum, qui minima fugiat rem id? Animi, recusandae eum ratione sint rem, quia iure in aspernatur, natus labore quas ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis suscipit rerum nemo quam veniam laboriosam optio, ducimus quas dicta repellat iusto earum nisi, vitae at. Eos laudantium quae exercitationem.</p>
 </body>
 
 </html>
